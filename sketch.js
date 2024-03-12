@@ -1,6 +1,6 @@
 let angle = 0;
-let angleVel = 0.01; 
-let minAngle = 0.13; 
+let angleVel = 0.1; 
+let minAngle = 0.15; 
 let maxAngle = 1.58; 
 
 function setup() {
@@ -11,7 +11,7 @@ function draw() {
   clear();
   angle += angleVel; 
   angle = angle%TWO_PI;
-  stroke(139, 69, 19);
+  stroke(70,130,180);
   strokeWeight(1);
   translate(width*0.5, height);
   branch(100);
